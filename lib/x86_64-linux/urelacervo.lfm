@@ -1,0 +1,450 @@
+object FrmRelAcervo: TFrmRelAcervo
+  Left = 300
+  Height = 700
+  Top = 100
+  Width = 838
+  Caption = 'Acervo - Exemplares por Título'
+  ClientHeight = 700
+  ClientWidth = 838
+  LCLVersion = '4.8.0.0'
+  object RLReport1: TRLReport
+    Left = 0
+    Top = 0
+    Width = 794
+    Height = 1123
+    DataSource = DsRel
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 0
+    Font.Height = -12
+    Font.Name = 'Arial'
+    Font.Style = []
+    Title = 'Acervo - Exemplares por Título'
+    object BandaCabecalho: TRLBand
+      Left = 38
+      Top = 38
+      Width = 718
+      Height = 58
+      BandType = btHeader
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = False
+      Borders.DrawTop = False
+      Borders.DrawRight = False
+      Borders.DrawBottom = True
+      object LblSistema: TRLLabel
+        Left = 0
+        Top = 2
+        Width = 147
+        Height = 14
+        Caption = 'SICREQ - Acervo de Quadrinhos'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 5592405
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+      end
+      object LblTitulo: TRLLabel
+        AutoSize = False
+        Left = 0
+        Top = 18
+        Width = 408
+        Height = 23
+        Caption = 'Acervo - Exemplares por Título'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -17
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object InfoData: TRLSystemInfo
+        Left = 418
+        Top = 2
+        Width = 300
+        Height = 15
+        Align = faRightTop
+        Alignment = taRightJustify
+        Info = itFullDate
+        Text = ''
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object BandaColunas: TRLBand
+      Left = 38
+      Top = 96
+      Width = 718
+      Height = 22
+      BandType = btColumnHeader
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = False
+      Borders.DrawTop = False
+      Borders.DrawRight = False
+      Borders.DrawBottom = True
+      object LblCol1: TRLLabel
+        AutoSize = False
+        Left = 0
+        Top = 4
+        Width = 41
+        Height = 16
+        Caption = 'Nº'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object LblCol2: TRLLabel
+        AutoSize = False
+        Left = 45
+        Top = 4
+        Width = 253
+        Height = 16
+        Caption = 'Subtítulo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object LblCol3: TRLLabel
+        AutoSize = False
+        Left = 302
+        Top = 4
+        Width = 70
+        Height = 16
+        Caption = 'Data'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object LblCol4: TRLLabel
+        AutoSize = False
+        Left = 376
+        Top = 4
+        Width = 105
+        Height = 16
+        Caption = 'Tamanho'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object LblCol5: TRLLabel
+        AutoSize = False
+        Left = 485
+        Top = 4
+        Width = 105
+        Height = 16
+        Caption = 'Armazenagem'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object LblCol6: TRLLabel
+        AutoSize = False
+        Left = 594
+        Top = 4
+        Width = 41
+        Height = 16
+        Caption = 'Págs.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object LblCol7: TRLLabel
+        AutoSize = False
+        Left = 639
+        Top = 4
+        Width = 75
+        Height = 16
+        Caption = 'Situação'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Grupo: TRLGroup
+      Left = 38
+      Top = 118
+      Width = 718
+      Height = 70
+      DataFields = 'titulo_nome'
+      object BandaGrupo: TRLBand
+        Left = 0
+        Top = 0
+        Width = 718
+        Height = 28
+        BandType = btHeader
+        object LblGrupo: TRLLabel
+          Left = 0
+          Top = 7
+          Width = 47
+          Height = 18
+          Caption = 'Título:'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 0
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object DBGrupo: TRLDBText
+          Left = 59
+          Top = 7
+          Width = 659
+          Height = 18
+          AutoSize = False
+          DataField = 'titulo_nome'
+          DataSource = DsRel
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 0
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+          Text = ''
+        end
+      end
+      object BandaDetalhe: TRLBand
+        Left = 0
+        Top = 26
+        Width = 718
+        Height = 18
+        BandType = btDetail
+        object DBCol1: TRLDBText
+          Left = 0
+          Top = 1
+          Width = 41
+          Height = 16
+          AutoSize = False
+          DataField = 'exemplar_codigo'
+          DataSource = DsRel
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 0
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          ParentFont = False
+          Text = ''
+        end
+        object DBCol2: TRLDBText
+          Left = 45
+          Top = 1
+          Width = 253
+          Height = 16
+          AutoSize = False
+          DataField = 'exemplar_subtitulo'
+          DataSource = DsRel
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 0
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          ParentFont = False
+          Text = ''
+        end
+        object DBCol3: TRLDBText
+          Left = 302
+          Top = 1
+          Width = 70
+          Height = 16
+          AutoSize = False
+          DataField = 'exemplar_data'
+          DataSource = DsRel
+          DisplayMask = 'dd/mm/yyyy'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 0
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          ParentFont = False
+          Text = ''
+        end
+        object DBCol4: TRLDBText
+          Left = 376
+          Top = 1
+          Width = 105
+          Height = 16
+          AutoSize = False
+          DataField = 'tamanho_descricao'
+          DataSource = DsRel
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 0
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          ParentFont = False
+          Text = ''
+        end
+        object DBCol5: TRLDBText
+          Left = 485
+          Top = 1
+          Width = 105
+          Height = 16
+          AutoSize = False
+          DataField = 'armazenagem_descricao'
+          DataSource = DsRel
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 0
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          ParentFont = False
+          Text = ''
+        end
+        object DBCol6: TRLDBText
+          Left = 594
+          Top = 1
+          Width = 41
+          Height = 16
+          AutoSize = False
+          DataField = 'exemplar_numeropagina'
+          DataSource = DsRel
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 0
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          ParentFont = False
+          Text = ''
+        end
+        object DBCol7: TRLDBText
+          Left = 639
+          Top = 1
+          Width = 75
+          Height = 16
+          AutoSize = False
+          DataField = 'situacao_descricao'
+          DataSource = DsRel
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 0
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          ParentFont = False
+          Text = ''
+        end
+      end
+      object BandaTotalGrupo: TRLBand
+        Left = 0
+        Top = 44
+        Width = 718
+        Height = 20
+        BandType = btSummary
+        object DBTotalGrupo: TRLDBResult
+          Left = 0
+          Top = 2
+          Width = 300
+          Height = 15
+          DataField = 'exemplar_codigo'
+          DataSource = DsRel
+          Info = riCount
+          Text = 'Subtotal: #'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = 5592405
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          ParentFont = False
+        end
+      end
+    end
+    object BandaResumo: TRLBand
+      Left = 38
+      Top = 188
+      Width = 718
+      Height = 26
+      BandType = btSummary
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = False
+      Borders.DrawTop = True
+      Borders.DrawRight = False
+      Borders.DrawBottom = False
+      object InfoTotal: TRLSystemInfo
+        Left = 0
+        Top = 6
+        Width = 300
+        Height = 17
+        Info = itDetailCount
+        Text = 'Total de registros: #'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object BandaRodape: TRLBand
+      Left = 38
+      Top = 214
+      Width = 718
+      Height = 20
+      BandType = btFooter
+      object LblRodape: TRLLabel
+        Left = 0
+        Top = 3
+        Width = 82
+        Height = 13
+        Caption = 'Gerado pelo SICREQ'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 5592405
+        Font.Height = -9
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+      end
+      object InfoPagina: TRLSystemInfo
+        Left = 568
+        Top = 3
+        Width = 150
+        Height = 15
+        Align = faRightTop
+        Alignment = taRightJustify
+        Info = itPageNumber
+        Text = 'Página #'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 0
+        Font.Height = -11
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+  end
+  object QryRel: TZReadOnlyQuery
+    Left = 808
+    Top = 10
+  end
+  object DsRel: TDataSource
+    DataSet = QryRel
+    Left = 808
+    Top = 60
+  end
+  object RLPDFFilter1: TRLPDFFilter
+    DisplayName = 'Documento PDF'
+    Left = 808
+    Top = 110
+  end
+end

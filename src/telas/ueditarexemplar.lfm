@@ -1,0 +1,379 @@
+object FrmEditarExemplar: TFrmEditarExemplar
+  Left = 400
+  Height = 457
+  Top = 150
+  Width = 900
+  BorderStyle = bsDialog
+  Caption = 'Exemplares'
+  ClientHeight = 457
+  ClientWidth = 900
+  Color = 2758415
+  KeyPreview = True
+  Position = poMainFormCenter
+  LCLVersion = '4.8.0.0'
+  object PnlTopo: TPanel
+    Left = 0
+    Height = 108
+    Top = 0
+    Width = 900
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    object LblSecao: TLabel
+      Left = 28
+      Height = 18
+      Top = 18
+      Caption = 'EXEMPLARES'
+      Font.Color = 16631187
+      Font.Height = -11
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object LblTitulo: TLabel
+      Left = 28
+      Height = 32
+      Top = 36
+      Caption = 'Editar exemplar'
+      Font.Color = 16381425
+      Font.Height = -23
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object LblTrilha: TLabel
+      Left = 28
+      Height = 18
+      Top = 76
+      Caption = ''
+      Font.Color = 12100500
+      Font.Height = -12
+      ParentFont = False
+    end
+  end
+  object PnlDivisa: TPanel
+    Left = 0
+    Height = 1
+    Top = 108
+    Width = 900
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 3877150
+    ParentColor = False
+  end
+  object PnlRodape: TPanel
+    Left = 0
+    Height = 76
+    Top = 381
+    Width = 900
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    object PnlLinha: TPanel
+      Left = 0
+      Height = 1
+      Top = 0
+      Width = 900
+      Align = alTop
+      BevelOuter = bvNone
+      Color = 3877150
+      ParentColor = False
+    end
+    object LblDica: TLabel
+      Left = 28
+      Height = 18
+      Top = 32
+      Caption = '* campos obrigatórios    F2 salva    Esc cancela'
+      Font.Color = 12100500
+      Font.Height = -11
+      ParentFont = False
+    end
+    object BtnCancelar: TButton
+      Tag = 2
+      Left = 610
+      Height = 40
+      Top = 20
+      Width = 120
+      Caption = 'Cancelar'
+      ModalResult = 2
+    end
+    object BtnSalvar: TButton
+      Tag = 1
+      Left = 742
+      Height = 40
+      Top = 20
+      Width = 130
+      Caption = 'Salvar'
+    end
+  end
+  object PnlCampos: TPanel
+    Left = 0
+    Height = 272
+    Top = 109
+    Width = 900
+    Align = alClient
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    object Lbl_exemplar_codigo: TLabel
+      Left = 28
+      Height = 18
+      Top = 20
+      Caption = 'Número *'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_exemplar_codigo: TPanel
+      Left = 28
+      Height = 42
+      Top = 42
+      Width = 90
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_exemplar_codigo: TDBEdit
+        AnchorSideTop.Control = Pnl_exemplar_codigo
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 66
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'exemplar_codigo'
+        DataSource = DsRegistro
+      end
+    end
+    object Lbl_exemplar_subtitulo: TLabel
+      Left = 138
+      Height = 18
+      Top = 20
+      Caption = 'Subtítulo'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_exemplar_subtitulo: TPanel
+      Left = 138
+      Height = 42
+      Top = 42
+      Width = 520
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_exemplar_subtitulo: TDBEdit
+        AnchorSideTop.Control = Pnl_exemplar_subtitulo
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 496
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'exemplar_subtitulo'
+        DataSource = DsRegistro
+      end
+    end
+    object Lbl_exemplar_data: TLabel
+      Left = 678
+      Height = 18
+      Top = 20
+      Caption = 'Data'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Edt_exemplar_data: TDBDateEdit
+      Left = 678
+      Height = 36
+      Top = 42
+      Width = 130
+      Color = 2101771
+      DataField = 'exemplar_data'
+      DataSource = DsRegistro
+      Font.Color = 16381425
+      Font.Height = -13
+      ParentFont = False
+    end
+    object Lbl_tamanho_codigo: TLabel
+      Left = 28
+      Height = 18
+      Top = 100
+      Caption = 'Tamanho'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Edt_tamanho_codigo: TDBLookupComboBox
+      Left = 28
+      Height = 36
+      Top = 122
+      Width = 220
+      Color = 2101771
+      DataField = 'tamanho_codigo'
+      DataSource = DsRegistro
+      Font.Color = 16381425
+      Font.Height = -13
+      ParentFont = False
+      Style = csDropDownList
+    end
+    object Lbl_armazenagem_codigo: TLabel
+      Left = 268
+      Height = 18
+      Top = 100
+      Caption = 'Armazenagem'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Edt_armazenagem_codigo: TDBLookupComboBox
+      Left = 268
+      Height = 36
+      Top = 122
+      Width = 220
+      Color = 2101771
+      DataField = 'armazenagem_codigo'
+      DataSource = DsRegistro
+      Font.Color = 16381425
+      Font.Height = -13
+      ParentFont = False
+      Style = csDropDownList
+    end
+    object Lbl_exemplar_situacao: TLabel
+      Left = 508
+      Height = 18
+      Top = 100
+      Caption = 'Situação'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Edt_exemplar_situacao: TDBLookupComboBox
+      Left = 508
+      Height = 36
+      Top = 122
+      Width = 160
+      Color = 2101771
+      DataField = 'exemplar_situacao'
+      DataSource = DsRegistro
+      Font.Color = 16381425
+      Font.Height = -13
+      ParentFont = False
+      Style = csDropDownList
+    end
+    object Lbl_exemplar_numeropagina: TLabel
+      Left = 688
+      Height = 18
+      Top = 100
+      Caption = 'Nº de páginas'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_exemplar_numeropagina: TPanel
+      Left = 688
+      Height = 42
+      Top = 122
+      Width = 100
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_exemplar_numeropagina: TDBEdit
+        AnchorSideTop.Control = Pnl_exemplar_numeropagina
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 76
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'exemplar_numeropagina'
+        DataSource = DsRegistro
+      end
+    end
+    object Lbl_exemplar_capa: TLabel
+      Left = 28
+      Height = 18
+      Top = 180
+      Caption = 'Capa (arquivo)'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_exemplar_capa: TPanel
+      Left = 28
+      Height = 42
+      Top = 202
+      Width = 420
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_exemplar_capa: TDBEdit
+        AnchorSideTop.Control = Pnl_exemplar_capa
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 396
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'exemplar_capa'
+        DataSource = DsRegistro
+      end
+    end
+    object BtnArq_exemplar_capa: TButton
+      Tag = 2
+      Left = 456
+      Height = 42
+      Top = 202
+      Width = 84
+      Caption = 'Escolher...'
+    end
+    object BtnVer_exemplar_capa: TButton
+      Tag = 2
+      Left = 546
+      Height = 42
+      Top = 202
+      Width = 52
+      Caption = 'Ver'
+    end
+  end
+  object QryRegistro: TZQuery
+    Left = 760
+    Top = 10
+  end
+  object DsRegistro: TDataSource
+    DataSet = QryRegistro
+    Left = 830
+    Top = 10
+  end
+end

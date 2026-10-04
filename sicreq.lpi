@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="SICREQ"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="frce"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="sicreq.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\udm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="uDM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\udefinicoes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uDefinicoes"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\uconfig.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmConfig"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uConfig"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src쫚stro.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\urelatorios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRelatorios"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\uprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPrincipal"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\utema.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTema"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\uedicao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uEdicao"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\upaginas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPaginas"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\uescolha.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uEscolha"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\usessao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uSessao"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\uusuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmUsuario"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uUsuarios"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\ulogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uLogin"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\uminhasenha.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmMinhaSenha"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMinhaSenha"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\utemaform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTemaForm"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditararmazenagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarArmazenagem"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditarartista.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarArtista"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditarartistahistoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarArtistaHistoria"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditareditora.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarEditora"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditarexemplar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarExemplar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditarhistoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarHistoria"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditarhistoriapersonagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarHistoriapersonagem"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditarimagempersonagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarImagempersonagem"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditarpersonagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarPersonagem"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditarpersonagemcriador.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarPersonagemCriador"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditarsituacaotitulo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarSituacaoTitulo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditartamanho.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarTamanho"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditartipotitulo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarTipoTitulo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditartitulo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarTitulo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ueditaruniverso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmEditarUniverso"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistaarmazenagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaArmazenagem"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistaartista.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaArtista"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistaartistahistoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaArtistaHistoria"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistaeditora.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaEditora"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistaexemplar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaExemplar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistahistoria.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaHistoria"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistahistoriapersonagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaHistoriapersonagem"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistaimagempersonagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaImagempersonagem"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistapersonagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaPersonagem"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistapersonagemcriador.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaPersonagemCriador"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistasituacaotitulo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaSituacaoTitulo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistatamanho.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaTamanho"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistatipotitulo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaTipoTitulo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistatitulo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaTitulo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistauniverso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaUniverso"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\telas\ulistausuario.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FraListaUsuario"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\utelas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uTelas"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\relatorios\urelacervo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelAcervo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\relatorios\urelcriadores.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelCriadores"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\relatorios\urelfichatitulo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelFichaTitulo"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\relatorios\urelhistorias.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelHistorias"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\relatorios\urellistagem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelListagem"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\relatorios\urelpersonagensuniverso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelPersonagensUniverso"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\relatorios\ureltituloseditora.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmRelTitulosEditora"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="sicreq"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir);src"/>
+      <OtherUnitFiles Value="src;src\telas;src\relatorios"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,3 @@
+exemplar_situacao: 0 = não possuo, 1 = possuo.
+historia_cor: 0 = preto e branco, 1 = colorida.
+participa_artistahistoria: 1 Roteiro, 2 Desenho, 3 Arte-final, 4 Cores, 5 Letras, 6 Capa, 7 Edição, 8 Roteiro e arte.

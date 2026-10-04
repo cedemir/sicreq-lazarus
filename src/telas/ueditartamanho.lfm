@@ -1,0 +1,273 @@
+object FrmEditarTamanho: TFrmEditarTamanho
+  Left = 400
+  Height = 297
+  Top = 150
+  Width = 900
+  BorderStyle = bsDialog
+  Caption = 'Tamanhos / Formatos'
+  ClientHeight = 297
+  ClientWidth = 900
+  Color = 2758415
+  KeyPreview = True
+  Position = poMainFormCenter
+  LCLVersion = '4.8.0.0'
+  object PnlTopo: TPanel
+    Left = 0
+    Height = 108
+    Top = 0
+    Width = 900
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    object LblSecao: TLabel
+      Left = 28
+      Height = 18
+      Top = 18
+      Caption = 'TAMANHOS / FORMATOS'
+      Font.Color = 16631187
+      Font.Height = -11
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object LblTitulo: TLabel
+      Left = 28
+      Height = 32
+      Top = 36
+      Caption = 'Editar tamanho'
+      Font.Color = 16381425
+      Font.Height = -23
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object LblTrilha: TLabel
+      Left = 28
+      Height = 18
+      Top = 76
+      Caption = ''
+      Font.Color = 12100500
+      Font.Height = -12
+      ParentFont = False
+    end
+  end
+  object PnlDivisa: TPanel
+    Left = 0
+    Height = 1
+    Top = 108
+    Width = 900
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 3877150
+    ParentColor = False
+  end
+  object PnlRodape: TPanel
+    Left = 0
+    Height = 76
+    Top = 221
+    Width = 900
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    object PnlLinha: TPanel
+      Left = 0
+      Height = 1
+      Top = 0
+      Width = 900
+      Align = alTop
+      BevelOuter = bvNone
+      Color = 3877150
+      ParentColor = False
+    end
+    object LblDica: TLabel
+      Left = 28
+      Height = 18
+      Top = 32
+      Caption = '* campos obrigatórios    F2 salva    Esc cancela'
+      Font.Color = 12100500
+      Font.Height = -11
+      ParentFont = False
+    end
+    object BtnCancelar: TButton
+      Tag = 2
+      Left = 610
+      Height = 40
+      Top = 20
+      Width = 120
+      Caption = 'Cancelar'
+      ModalResult = 2
+    end
+    object BtnSalvar: TButton
+      Tag = 1
+      Left = 742
+      Height = 40
+      Top = 20
+      Width = 130
+      Caption = 'Salvar'
+    end
+  end
+  object PnlCampos: TPanel
+    Left = 0
+    Height = 112
+    Top = 109
+    Width = 900
+    Align = alClient
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    object Lbl_tamanho_codigo: TLabel
+      Left = 28
+      Height = 18
+      Top = 20
+      Caption = 'Código'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_tamanho_codigo: TPanel
+      Left = 28
+      Height = 42
+      Top = 42
+      Width = 80
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_tamanho_codigo: TDBEdit
+        AnchorSideTop.Control = Pnl_tamanho_codigo
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 56
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'tamanho_codigo'
+        DataSource = DsRegistro
+        ReadOnly = True
+      end
+    end
+    object Lbl_tamanho_descricao: TLabel
+      Left = 128
+      Height = 18
+      Top = 20
+      Caption = 'Descrição *'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_tamanho_descricao: TPanel
+      Left = 128
+      Height = 42
+      Top = 42
+      Width = 400
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_tamanho_descricao: TDBEdit
+        AnchorSideTop.Control = Pnl_tamanho_descricao
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 376
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'tamanho_descricao'
+        DataSource = DsRegistro
+      end
+    end
+    object Lbl_tamanho_linha: TLabel
+      Left = 548
+      Height = 18
+      Top = 20
+      Caption = 'Linha (cm)'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_tamanho_linha: TPanel
+      Left = 548
+      Height = 42
+      Top = 42
+      Width = 100
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_tamanho_linha: TDBEdit
+        AnchorSideTop.Control = Pnl_tamanho_linha
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 76
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'tamanho_linha'
+        DataSource = DsRegistro
+      end
+    end
+    object Lbl_tamanho_coluna: TLabel
+      Left = 668
+      Height = 18
+      Top = 20
+      Caption = 'Coluna (cm)'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_tamanho_coluna: TPanel
+      Left = 668
+      Height = 42
+      Top = 42
+      Width = 100
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_tamanho_coluna: TDBEdit
+        AnchorSideTop.Control = Pnl_tamanho_coluna
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 76
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'tamanho_coluna'
+        DataSource = DsRegistro
+      end
+    end
+  end
+  object QryRegistro: TZQuery
+    Left = 760
+    Top = 10
+  end
+  object DsRegistro: TDataSource
+    DataSet = QryRegistro
+    Left = 830
+    Top = 10
+  end
+end

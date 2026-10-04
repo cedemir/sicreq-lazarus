@@ -1,0 +1,330 @@
+object FrmUsuario: TFrmUsuario
+  Left = 400
+  Height = 514
+  Top = 150
+  Width = 640
+  BorderStyle = bsDialog
+  Caption = 'Usuário'
+  ClientHeight = 514
+  ClientWidth = 640
+  Color = 2758415
+  KeyPreview = True
+  OnKeyDown = FormKeyDown
+  Position = poMainFormCenter
+  LCLVersion = '4.8.0.0'
+  object LblSecao: TLabel
+    Left = 28
+    Height = 18
+    Top = 20
+    Caption = 'USUÁRIOS'
+    Font.Color = 16631187
+    Font.Height = -11
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblTitulo: TLabel
+    Left = 28
+    Height = 32
+    Top = 38
+    Caption = 'Novo usuário'
+    Font.Color = 16381425
+    Font.Height = -23
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object LblSubtitulo: TLabel
+    Left = 28
+    Height = 18
+    Top = 76
+    Caption = 'Defina o perfil e uma senha inicial.'
+    Font.Color = 12100500
+    Font.Height = -12
+    ParentFont = False
+  end
+  object LblNome: TLabel
+    Left = 28
+    Height = 18
+    Top = 112
+    Caption = 'Nome *'
+    Font.Color = 12100500
+    Font.Height = -12
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object PnlNome: TPanel
+    Tag = 10
+    Left = 28
+    Height = 44
+    Top = 134
+    Width = 584
+    Anchors = [akTop, akLeft]
+    BevelOuter = bvNone
+    Color = 2101771
+    ParentColor = False
+    TabOrder = 0
+    object EdtNome: TEdit
+      AnchorSideTop.Control = PnlNome
+      AnchorSideTop.Side = asrCenter
+      Left = 12
+      Height = 24
+      Top = 10
+      Width = 560
+      Anchors = [akTop, akLeft, akRight]
+      BorderStyle = bsNone
+      Color = 2101771
+      Font.Color = 16381425
+      Font.Height = -13
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object LblLogin: TLabel
+    Left = 28
+    Height = 18
+    Top = 192
+    Caption = 'Login *'
+    Font.Color = 12100500
+    Font.Height = -12
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object PnlLogin: TPanel
+    Tag = 10
+    Left = 28
+    Height = 44
+    Top = 214
+    Width = 282
+    Anchors = [akTop, akLeft]
+    BevelOuter = bvNone
+    Color = 2101771
+    ParentColor = False
+    TabOrder = 1
+    object EdtLogin: TEdit
+      AnchorSideTop.Control = PnlLogin
+      AnchorSideTop.Side = asrCenter
+      Left = 12
+      Height = 24
+      Top = 10
+      Width = 258
+      Anchors = [akTop, akLeft, akRight]
+      BorderStyle = bsNone
+      Color = 2101771
+      Font.Color = 16381425
+      Font.Height = -13
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object LblEmail: TLabel
+    Left = 330
+    Height = 18
+    Top = 192
+    Caption = 'E-mail'
+    Font.Color = 12100500
+    Font.Height = -12
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object PnlEmail: TPanel
+    Tag = 10
+    Left = 330
+    Height = 44
+    Top = 214
+    Width = 282
+    Anchors = [akTop, akLeft]
+    BevelOuter = bvNone
+    Color = 2101771
+    ParentColor = False
+    TabOrder = 2
+    object EdtEmail: TEdit
+      AnchorSideTop.Control = PnlEmail
+      AnchorSideTop.Side = asrCenter
+      Left = 12
+      Height = 24
+      Top = 10
+      Width = 258
+      Anchors = [akTop, akLeft, akRight]
+      BorderStyle = bsNone
+      Color = 2101771
+      Font.Color = 16381425
+      Font.Height = -13
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object LblPerfil: TLabel
+    Left = 28
+    Height = 18
+    Top = 272
+    Caption = 'Perfil *'
+    Font.Color = 12100500
+    Font.Height = -12
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object CbPerfil: TComboBox
+    Left = 28
+    Height = 36
+    Top = 294
+    Width = 282
+    Color = 2101771
+    Font.Color = 16381425
+    Font.Height = -13
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 3
+  end
+  object LblAtivo: TLabel
+    Left = 330
+    Height = 18
+    Top = 272
+    Caption = 'Situação'
+    Font.Color = 12100500
+    Font.Height = -12
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object CbAtivo: TComboBox
+    Left = 330
+    Height = 36
+    Top = 294
+    Width = 282
+    Color = 2101771
+    Font.Color = 16381425
+    Font.Height = -13
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 4
+  end
+  object LblSenha: TLabel
+    Left = 28
+    Height = 18
+    Top = 352
+    Caption = 'Senha *'
+    Font.Color = 12100500
+    Font.Height = -12
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object PnlSenha: TPanel
+    Tag = 10
+    Left = 28
+    Height = 44
+    Top = 374
+    Width = 282
+    Anchors = [akTop, akLeft]
+    BevelOuter = bvNone
+    Color = 2101771
+    ParentColor = False
+    TabOrder = 5
+    object EdtSenha: TEdit
+      AnchorSideTop.Control = PnlSenha
+      AnchorSideTop.Side = asrCenter
+      Left = 12
+      Height = 24
+      Top = 10
+      Width = 258
+      Anchors = [akTop, akLeft, akRight]
+      BorderStyle = bsNone
+      Color = 2101771
+      Font.Color = 16381425
+      Font.Height = -13
+      ParentFont = False
+      PasswordChar = '*'
+      TabOrder = 0
+    end
+  end
+  object LblConfirma: TLabel
+    Left = 330
+    Height = 18
+    Top = 352
+    Caption = 'Confirmar senha *'
+    Font.Color = 12100500
+    Font.Height = -12
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object PnlConfirma: TPanel
+    Tag = 10
+    Left = 330
+    Height = 44
+    Top = 374
+    Width = 282
+    Anchors = [akTop, akLeft]
+    BevelOuter = bvNone
+    Color = 2101771
+    ParentColor = False
+    TabOrder = 6
+    object EdtConfirma: TEdit
+      AnchorSideTop.Control = PnlConfirma
+      AnchorSideTop.Side = asrCenter
+      Left = 12
+      Height = 24
+      Top = 10
+      Width = 258
+      Anchors = [akTop, akLeft, akRight]
+      BorderStyle = bsNone
+      Color = 2101771
+      Font.Color = 16381425
+      Font.Height = -13
+      ParentFont = False
+      PasswordChar = '*'
+      TabOrder = 0
+    end
+  end
+  object PnlRodape: TPanel
+    Left = 0
+    Height = 76
+    Top = 1000
+    Width = 100
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    TabOrder = 10
+    object PnlLinha: TPanel
+      Left = 0
+      Height = 1
+      Top = 0
+      Width = 100
+      Align = alTop
+      BevelOuter = bvNone
+      Color = 3877150
+      ParentColor = False
+      TabOrder = 9
+    end
+    object LblErro: TLabel
+      Left = 28
+      Height = 50
+      Top = 14
+      Caption = ''
+      Font.Color = 7434744
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+      AutoSize = False
+      Width = 320
+      WordWrap = True
+    end
+    object BtnCancelar: TButton
+      Tag = 2
+      Left = 360
+      Height = 40
+      Top = 20
+      Width = 120
+      Caption = 'Cancelar'
+      ModalResult = 2
+      TabOrder = 7
+    end
+    object BtnSalvar: TButton
+      Tag = 1
+      Left = 492
+      Height = 40
+      Top = 20
+      Width = 120
+      Caption = 'Salvar'
+      OnClick = BtnSalvarClick
+      TabOrder = 8
+    end
+  end
+end

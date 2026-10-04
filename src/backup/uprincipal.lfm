@@ -1,0 +1,13 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 200
+  Height = 860
+  Top = 100
+  Width = 1360
+  Caption = 'SICREQ - Acervo de Quadrinhos'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  Position = poScreenCenter
+  WindowState = wsMaximized
+  LCLVersion = '4.8.0.0'
+end

@@ -1,0 +1,371 @@
+object FrmLogin: TFrmLogin
+  Left = 400
+  Height = 770
+  Top = 150
+  Width = 560
+  BorderStyle = bsSingle
+  Caption = 'SICREQ - Entrar'
+  ClientHeight = 770
+  ClientWidth = 560
+  Color = 2101771
+  KeyPreview = True
+  OnKeyDown = FormKeyDown
+  Position = poScreenCenter
+  LCLVersion = '4.8.0.0'
+  BorderIcons = [biSystemMenu, biMinimize]
+  OnShow = FormShow
+  object PnlLogo: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    Tag = 12
+    Left = 254
+    Height = 52
+    Top = 24
+    Width = 52
+    BevelOuter = bvNone
+    Caption = 'SQ'
+    Color = 15426341
+    ParentColor = False
+    Font.Color = 16777215
+    Font.Height = -19
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 11
+  end
+  object LblMarca: TLabel
+    Left = 246
+    Height = 34
+    Top = 90
+    Caption = 'SICREQ'
+    Font.Color = 16777215
+    Font.Height = -24
+    Font.Style = [fsBold]
+    ParentFont = False
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = PnlLogo
+    AnchorSideTop.Side = asrBottom
+    BorderSpacing.Top = 12
+  end
+  object LblSubMarca: TLabel
+    Left = 210
+    Height = 19
+    Top = 126
+    Caption = 'Acervo de Quadrinhos'
+    Font.Color = 12100500
+    Font.Height = -13
+    ParentFont = False
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = LblMarca
+    AnchorSideTop.Side = asrBottom
+    BorderSpacing.Top = 2
+  end
+  object PnlCartao: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = LblSubMarca
+    AnchorSideTop.Side = asrBottom
+    Left = 70
+    Height = 524
+    Top = 168
+    Width = 420
+    AutoSize = True
+    BorderSpacing.Top = 24
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    Tag = 11
+    TabOrder = 2
+    object PnlCabecalho: TPanel
+      Left = 32
+      Height = 88
+      Top = 28
+      Width = 356
+      Align = alTop
+      BorderSpacing.Left = 32
+      BorderSpacing.Top = 28
+      BorderSpacing.Right = 32
+      BevelOuter = bvNone
+      Color = 2758415
+      ParentColor = False
+      TabOrder = 0
+      object LblSecao: TLabel
+        Left = 0
+        Height = 18
+        Top = 0
+        Caption = 'PRIMEIRO ACESSO'
+        Font.Color = 16631187
+        Font.Height = -12
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object LblTitulo: TLabel
+        Left = 0
+        Height = 30
+        Top = 20
+        Caption = 'Crie o administrador'
+        Font.Color = 16381425
+        Font.Height = -21
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object LblSubtitulo: TLabel
+        Left = 0
+        Height = 18
+        Top = 56
+        Caption = 'Ele poderá cadastrar os demais usuários.'
+        Font.Color = 12100500
+        Font.Height = -12
+        ParentFont = False
+      end
+    end
+    object GrpNome: TPanel
+      Left = 32
+      Height = 76
+      Top = 120
+      Width = 356
+      Align = alTop
+      BorderSpacing.Left = 32
+      BorderSpacing.Right = 32
+      BevelOuter = bvNone
+      Color = 2758415
+      ParentColor = False
+      TabOrder = 3
+      object LblNome: TLabel
+        Left = 0
+        Height = 18
+        Top = 0
+        Caption = 'Nome'
+        Font.Color = 12100500
+        Font.Height = -12
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object PnlNome: TPanel
+        Tag = 10
+        Left = 0
+        Height = 44
+        Top = 22
+        Width = 356
+        Anchors = [akTop, akLeft, akRight]
+        BevelOuter = bvNone
+        Color = 2101771
+        ParentColor = False
+        TabOrder = 4
+        object EdtNome: TEdit
+          AnchorSideTop.Control = PnlNome
+          AnchorSideTop.Side = asrCenter
+          Left = 12
+          Height = 24
+          Top = 10
+          Width = 332
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsNone
+          Color = 2101771
+          Font.Color = 16381425
+          Font.Height = -13
+          ParentFont = False
+          TabOrder = 0
+        end
+      end
+    end
+    object GrpLogin: TPanel
+      Left = 32
+      Height = 76
+      Top = 200
+      Width = 356
+      Align = alTop
+      BorderSpacing.Left = 32
+      BorderSpacing.Right = 32
+      BevelOuter = bvNone
+      Color = 2758415
+      ParentColor = False
+      TabOrder = 5
+      object LblLogin: TLabel
+        Left = 0
+        Height = 18
+        Top = 0
+        Caption = 'Login'
+        Font.Color = 12100500
+        Font.Height = -12
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object PnlLogin: TPanel
+        Tag = 10
+        Left = 0
+        Height = 44
+        Top = 22
+        Width = 356
+        Anchors = [akTop, akLeft, akRight]
+        BevelOuter = bvNone
+        Color = 2101771
+        ParentColor = False
+        TabOrder = 6
+        object EdtLogin: TEdit
+          AnchorSideTop.Control = PnlLogin
+          AnchorSideTop.Side = asrCenter
+          Left = 12
+          Height = 24
+          Top = 10
+          Width = 332
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsNone
+          Color = 2101771
+          Font.Color = 16381425
+          Font.Height = -13
+          ParentFont = False
+          TabOrder = 0
+        end
+      end
+    end
+    object GrpSenha: TPanel
+      Left = 32
+      Height = 76
+      Top = 280
+      Width = 356
+      Align = alTop
+      BorderSpacing.Left = 32
+      BorderSpacing.Right = 32
+      BevelOuter = bvNone
+      Color = 2758415
+      ParentColor = False
+      TabOrder = 7
+      object LblSenha: TLabel
+        Left = 0
+        Height = 18
+        Top = 0
+        Caption = 'Senha'
+        Font.Color = 12100500
+        Font.Height = -12
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object PnlSenha: TPanel
+        Tag = 10
+        Left = 0
+        Height = 44
+        Top = 22
+        Width = 356
+        Anchors = [akTop, akLeft, akRight]
+        BevelOuter = bvNone
+        Color = 2101771
+        ParentColor = False
+        TabOrder = 8
+        object EdtSenha: TEdit
+          AnchorSideTop.Control = PnlSenha
+          AnchorSideTop.Side = asrCenter
+          Left = 12
+          Height = 24
+          Top = 10
+          Width = 332
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsNone
+          Color = 2101771
+          Font.Color = 16381425
+          Font.Height = -13
+          ParentFont = False
+          PasswordChar = '*'
+          TabOrder = 0
+        end
+      end
+    end
+    object GrpConfirma: TPanel
+      Left = 32
+      Height = 76
+      Top = 360
+      Width = 356
+      Align = alTop
+      BorderSpacing.Left = 32
+      BorderSpacing.Right = 32
+      BevelOuter = bvNone
+      Color = 2758415
+      ParentColor = False
+      TabOrder = 9
+      object LblConfirma: TLabel
+        Left = 0
+        Height = 18
+        Top = 0
+        Caption = 'Confirmar senha'
+        Font.Color = 12100500
+        Font.Height = -12
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object PnlConfirma: TPanel
+        Tag = 10
+        Left = 0
+        Height = 44
+        Top = 22
+        Width = 356
+        Anchors = [akTop, akLeft, akRight]
+        BevelOuter = bvNone
+        Color = 2101771
+        ParentColor = False
+        TabOrder = 10
+        object EdtConfirma: TEdit
+          AnchorSideTop.Control = PnlConfirma
+          AnchorSideTop.Side = asrCenter
+          Left = 12
+          Height = 24
+          Top = 10
+          Width = 332
+          Anchors = [akTop, akLeft, akRight]
+          BorderStyle = bsNone
+          Color = 2101771
+          Font.Color = 16381425
+          Font.Height = -13
+          ParentFont = False
+          PasswordChar = '*'
+          TabOrder = 0
+        end
+      end
+    end
+    object LblErro: TLabel
+      Left = 32
+      Height = 30
+      Top = 420
+      Width = 356
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Left = 32
+      BorderSpacing.Right = 32
+      Caption = ''
+      WordWrap = True
+      Font.Color = 7434744
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object BtnEntrar: TButton
+      Tag = 1
+      Left = 32
+      Height = 46
+      Top = 460
+      Width = 356
+      Caption = 'Criar e entrar'
+      OnClick = BtnEntrarClick
+      Align = alTop
+      BorderSpacing.Left = 32
+      BorderSpacing.Right = 32
+      BorderSpacing.Bottom = 28
+      TabOrder = 1
+    end
+  end
+  object BtnConexao: TButton
+    Tag = 2
+    Left = 195
+    Height = 36
+    Top = 710
+    Width = 170
+    Caption = 'Configurar conexão'
+    OnClick = BtnConexaoClick
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = PnlCartao
+    AnchorSideTop.Side = asrBottom
+    BorderSpacing.Top = 18
+    TabOrder = 12
+  end
+end

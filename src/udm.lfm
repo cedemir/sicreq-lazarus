@@ -1,0 +1,17 @@
+object DM: TDM
+  OnCreate = DataModuleCreate
+  Height = 180
+  HorizontalOffset = 400
+  VerticalOffset = 250
+  Width = 260
+  PPI = 96
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    ClientCodepage = 'utf8mb4'
+    AutoCommit = True
+    Port = 3306
+    Protocol = 'mysql'
+    Left = 48
+    Top = 32
+  end
+end

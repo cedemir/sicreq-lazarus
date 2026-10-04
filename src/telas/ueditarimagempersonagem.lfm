@@ -1,0 +1,216 @@
+object FrmEditarImagempersonagem: TFrmEditarImagempersonagem
+  Left = 400
+  Height = 297
+  Top = 150
+  Width = 900
+  BorderStyle = bsDialog
+  Caption = 'Imagens do Personagem'
+  ClientHeight = 297
+  ClientWidth = 900
+  Color = 2758415
+  KeyPreview = True
+  Position = poMainFormCenter
+  LCLVersion = '4.8.0.0'
+  object PnlTopo: TPanel
+    Left = 0
+    Height = 108
+    Top = 0
+    Width = 900
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    object LblSecao: TLabel
+      Left = 28
+      Height = 18
+      Top = 18
+      Caption = 'IMAGENS DO PERSONAGEM'
+      Font.Color = 16631187
+      Font.Height = -11
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object LblTitulo: TLabel
+      Left = 28
+      Height = 32
+      Top = 36
+      Caption = 'Editar imagem'
+      Font.Color = 16381425
+      Font.Height = -23
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object LblTrilha: TLabel
+      Left = 28
+      Height = 18
+      Top = 76
+      Caption = ''
+      Font.Color = 12100500
+      Font.Height = -12
+      ParentFont = False
+    end
+  end
+  object PnlDivisa: TPanel
+    Left = 0
+    Height = 1
+    Top = 108
+    Width = 900
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 3877150
+    ParentColor = False
+  end
+  object PnlRodape: TPanel
+    Left = 0
+    Height = 76
+    Top = 221
+    Width = 900
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    object PnlLinha: TPanel
+      Left = 0
+      Height = 1
+      Top = 0
+      Width = 900
+      Align = alTop
+      BevelOuter = bvNone
+      Color = 3877150
+      ParentColor = False
+    end
+    object LblDica: TLabel
+      Left = 28
+      Height = 18
+      Top = 32
+      Caption = '* campos obrigatórios    F2 salva    Esc cancela'
+      Font.Color = 12100500
+      Font.Height = -11
+      ParentFont = False
+    end
+    object BtnCancelar: TButton
+      Tag = 2
+      Left = 610
+      Height = 40
+      Top = 20
+      Width = 120
+      Caption = 'Cancelar'
+      ModalResult = 2
+    end
+    object BtnSalvar: TButton
+      Tag = 1
+      Left = 742
+      Height = 40
+      Top = 20
+      Width = 130
+      Caption = 'Salvar'
+    end
+  end
+  object PnlCampos: TPanel
+    Left = 0
+    Height = 112
+    Top = 109
+    Width = 900
+    Align = alClient
+    BevelOuter = bvNone
+    Color = 2758415
+    ParentColor = False
+    object Lbl_imagem_codigo: TLabel
+      Left = 28
+      Height = 18
+      Top = 20
+      Caption = 'Nº'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_imagem_codigo: TPanel
+      Left = 28
+      Height = 42
+      Top = 42
+      Width = 80
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_imagem_codigo: TDBEdit
+        AnchorSideTop.Control = Pnl_imagem_codigo
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 56
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'imagem_codigo'
+        DataSource = DsRegistro
+      end
+    end
+    object Lbl_imagem_descricao: TLabel
+      Left = 128
+      Height = 18
+      Top = 20
+      Caption = 'Descrição / arquivo'
+      Font.Color = 12100500
+      Font.Height = -12
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Pnl_imagem_descricao: TPanel
+      Left = 128
+      Height = 42
+      Top = 42
+      Width = 500
+      Tag = 10
+      BevelOuter = bvNone
+      Color = 2101771
+      ParentColor = False
+      object Edt_imagem_descricao: TDBEdit
+        AnchorSideTop.Control = Pnl_imagem_descricao
+        AnchorSideTop.Side = asrCenter
+        Left = 12
+        Height = 24
+        Top = 9
+        Width = 476
+        Anchors = [akTop, akLeft, akRight]
+        BorderStyle = bsNone
+        Color = 2101771
+        Font.Color = 16381425
+        Font.Height = -13
+        ParentFont = False
+        DataField = 'imagem_descricao'
+        DataSource = DsRegistro
+      end
+    end
+    object BtnArq_imagem_descricao: TButton
+      Tag = 2
+      Left = 636
+      Height = 42
+      Top = 42
+      Width = 84
+      Caption = 'Escolher...'
+    end
+    object BtnVer_imagem_descricao: TButton
+      Tag = 2
+      Left = 726
+      Height = 42
+      Top = 42
+      Width = 52
+      Caption = 'Ver'
+    end
+  end
+  object QryRegistro: TZQuery
+    Left = 760
+    Top = 10
+  end
+  object DsRegistro: TDataSource
+    DataSet = QryRegistro
+    Left = 830
+    Top = 10
+  end
+end
